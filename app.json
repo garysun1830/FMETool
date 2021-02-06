@@ -5,11 +5,12 @@
   "app_name": "FMETemplate2",
   "lib_name": "lib64",
   "secrets_dir_name": "secrets",
+  "token_name": "..\\FMETemplate2\\token.txt",
   "secret_name": "templateDefaults.config",
   "secret_src": "..\\FMETemplate2\\%s",
   "cmd_bat": [
     "rmdir code_path\\app_name/s/q",
-    "git_path clone https://idir-gsun:89d5e8c9e16603d170936cb8f7e291c71ca9fd50@gogs.data.gov.bc.ca/daops/FMETemplate2.git code_path\\app_name",
+    "git_path clone https://idir-gsun:token_value@gogs.data.gov.bc.ca/daops/FMETemplate2.git code_path\\app_name",
     "python_path -m pip install -r code_path\\app_name\\lib\\requirements.txt -t code_path\\app_name\\lib_name"
   ],
   "lib_file_dirs": [
